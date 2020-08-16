@@ -8,7 +8,12 @@ function ajustSizeGameplace(){
 ajustSizeGameplace()
 
 function randomElement(){
-     //generate random positions
+    //remove the previous mosquito (if exists)
+    if(document.getElementById('mosquito')){
+        document.getElementById('mosquito').remove()
+    }
+
+    //generate random positions
      var positionY = Math.floor(Math.random()*gameplaceH) - 90
      var positionX = Math.floor(Math.random()*gameplaceW) - 90
      positionY = positionY < 0 ? 0 : positionY
@@ -23,6 +28,7 @@ function randomElement(){
      mosquito.style.left= positionX + 'px'
      mosquito.style.top= positionY + 'px'
      mosquito.style.position= 'absolute'
+     mosquito.id = 'mosquito'
 
      //append element 
      document.body.appendChild(mosquito)
