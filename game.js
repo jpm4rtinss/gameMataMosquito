@@ -1,7 +1,7 @@
 var gameplaceH
 var gameplaceW 
 var lifes = 1
-var timer = 10
+var time = 10
 
 function ajustSizeGameplace(){
      gameplaceH = window.innerHeight
@@ -9,10 +9,25 @@ function ajustSizeGameplace(){
 }
 ajustSizeGameplace()
 
+// chronometer control
+var chronometer = setInterval(function(){
+    
+    time-= 1
+    if(time<=0){
+        clearInterval(chronometer)
+        clearInterval(createMosquito)
+    }
+    document.getElementById('chrono').innerHTML = time 
+    
+},1000)
+
+
 function randomElement(){
-    //remove the previous mosquito (if exists)
+     //remove the previous mosquito (if exists)
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
+        
+        // lifes control and send to game over page
         if(lifes>3){
             window.location.href = 'gameover.html'
             
@@ -22,17 +37,17 @@ function randomElement(){
         }
     }
 
-    //generate random positions
+     //generate random positions
      var positionY = Math.floor(Math.random()*gameplaceH) - 90
      var positionX = Math.floor(Math.random()*gameplaceW) - 90
      positionY = positionY < 0 ? 0 : positionY
      positionX = positionX < 0 ? 0 : positionX
  
-     // create element html
+      //create element html
      var mosquito = document.createElement('img')
      mosquito.src = 'img/mosca.png'
 
-     // set style and position 
+      // set style and position 
      mosquito.className = mosquitoClass() + ' ' +reverseMosquito()
      mosquito.style.left= positionX + 'px'
      mosquito.style.top= positionY + 'px'
@@ -42,11 +57,11 @@ function randomElement(){
          this.remove()
      }
 
-     //append element 
+      //append element 
      document.body.appendChild(mosquito)
 }
 randomElement()
-//alternate style classes
+ //alternate style classes
 function mosquitoClass (){
     var numberMosquitoClass = Math.floor(Math.random()*3)
     
@@ -60,7 +75,7 @@ function mosquitoClass (){
      }
 }
 
-// reverse mosquito img
+ // reverse mosquito img
 function reverseMosquito() {
     var changeSide = Math.floor(Math.random()*2)
     
