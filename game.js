@@ -1,5 +1,7 @@
 var gameplaceH
 var gameplaceW 
+var lifes = 1
+var timer = 10
 
 function ajustSizeGameplace(){
      gameplaceH = window.innerHeight
@@ -11,12 +13,13 @@ function randomElement(){
     //remove the previous mosquito (if exists)
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
-      if (vidas>3){
-
-      }else{
-        document.getElementById('v' + vidas).src = "img/coracao_vazio.png"
-      }
-
+        if(lifes>3){
+            window.location.href = 'gameover.html'
+            
+        } else{
+            document.getElementById('v'+lifes).src = "img/coracao_vazio.png"
+            lifes++
+        }
     }
 
     //generate random positions
