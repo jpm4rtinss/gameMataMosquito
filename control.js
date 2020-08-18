@@ -1,5 +1,5 @@
 document.getElementById('chrono').innerHTML = time 
 
 var createMosquito = setInterval(
-    function(){ randomElement()},2000)
+    function(){ randomElement()},1000)
 

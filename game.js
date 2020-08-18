@@ -1,7 +1,7 @@
 var gameplaceH
 var gameplaceW 
 var lifes = 1
-var time = 10
+var time = 15
 
 function ajustSizeGameplace(){
      gameplaceH = window.innerHeight
