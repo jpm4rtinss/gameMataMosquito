@@ -1,2 +1,2 @@
 setInterval(
-    function(){ randomElement()},1000)
+    function(){ randomElement()},2000)

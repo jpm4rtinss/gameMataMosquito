@@ -11,6 +11,12 @@ function randomElement(){
     //remove the previous mosquito (if exists)
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
+      if (vidas>3){
+
+      }else{
+        document.getElementById('v' + vidas).src = "img/coracao_vazio.png"
+      }
+
     }
 
     //generate random positions
@@ -29,6 +35,9 @@ function randomElement(){
      mosquito.style.top= positionY + 'px'
      mosquito.style.position= 'absolute'
      mosquito.id = 'mosquito'
+     mosquito.onclick=function(){
+         this.remove()
+     }
 
      //append element 
      document.body.appendChild(mosquito)
