@@ -2,6 +2,18 @@ var gameplaceH
 var gameplaceW 
 var lifes = 1
 var time = 15
+var mosquitoTimer = 1500
+
+var level = window.location.search
+var level = level.replace('?', '')
+
+if(level === 'easy'){
+    mosquitoTimer = '1500'
+} else if(level === 'normal'){
+    mosquitoTimer = '1100'
+} else if(level === 'hard'){
+    mosquitoTimer = '900'
+}
 
 function ajustSizeGameplace(){
      gameplaceH = window.innerHeight
