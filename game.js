@@ -16,6 +16,7 @@ var chronometer = setInterval(function(){
     if(time<=0){
         clearInterval(chronometer)
         clearInterval(createMosquito)
+        window.location.href = 'victory.html'
     }
     document.getElementById('chrono').innerHTML = time 
     
