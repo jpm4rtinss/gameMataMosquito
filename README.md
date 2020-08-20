@@ -7,8 +7,10 @@ Game Mata Mosquito</h1>
 
 ### Game
 <div width= 100%>
-[]!(https://github.com/jpm4rtinss/gameMataMosquito/blob/master/img/20200820_171319.gif)
+ <img src="https://github.com/jpm4rtinss/gameMataMosquito/blob/master/img/20200820_171319.gif" align="center">
+
 </div>
+
 ## Linguagens e bibliotecas
 
 - **JS**  
