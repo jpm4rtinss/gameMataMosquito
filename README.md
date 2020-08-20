@@ -6,9 +6,9 @@ Game Mata Mosquito</h1>
 <img src="https://github.com/jpm4rtinss/gameMataMosquito/blob/master/img/readmehome.PNG" alt="home web"  height="425" align="center">
 
 ### Game
-
+<div width= 100%>
 []!(https://github.com/jpm4rtinss/gameMataMosquito/blob/master/img/20200820_171319.gif)
-
+</div>
 ## Linguagens e bibliotecas
 
 - **JS**  
