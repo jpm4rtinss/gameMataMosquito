@@ -1,7 +1,7 @@
 <h1 align="center">
 Game Mata Mosquito</h1>
  
-<p align="center">Game desenvolvido no curso de Wed Desenvolvimento com objetivo de matar mosquitos que aparecem aleatoriamente na tela, a aplicação tem 3 niveis diferentes, contagem de vidas e cronometro.</p> 
+<p align="center">Game developed in the course of Fourth Development with the objective of killing mosquitoes that appear randomly on the screen, the application has 3 different levels, counting lives and chronometer.</p> 
 
 ### Game
 <div width= 100%>
@@ -9,7 +9,7 @@ Game Mata Mosquito</h1>
 
 </div>
 
-## Linguagens e bibliotecas
+## Languages and libraries
 
 - **JS**  
 - **CSS** - Bootstrap 4
