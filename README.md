@@ -9,7 +9,7 @@ Game Mata Mosquito</h1>
 
 </div>
 
-## Languages and libraries
+## Tech stack
 
 - **JS**  
 - **CSS** - Bootstrap 4
