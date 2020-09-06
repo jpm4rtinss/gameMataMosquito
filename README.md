@@ -9,7 +9,7 @@ Game Mata Mosquito</h1>
 
 </div>
 
-## Tech stack
+## 🛠 Tech stack
 
 - **JS**  
 - **CSS** - Bootstrap 4
